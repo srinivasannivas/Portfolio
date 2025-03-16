@@ -1,0 +1,13 @@
+.dashboard {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard a {
+  color: white;
+  text-decoration: none;
+}
