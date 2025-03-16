@@ -3,83 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Srinivasan C</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: #121212;
             color: #ffffff;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
         .navbar {
-            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 50px;
-            background-color: #1e1e1e;
+            padding: 20px;
+            background: #1e1e1e;
         }
-        .logo {
+        .navbar h1 {
+            margin: 0;
             font-size: 24px;
-            font-weight: bold;
-        }
-        .nav-links {
-            display: flex;
-            gap: 20px;
+            font-weight: 600;
         }
         .nav-links a {
-            color: white;
+            color: #ffffff;
             text-decoration: none;
-            font-size: 18px;
+            margin-left: 20px;
+            font-weight: 400;
         }
         .container {
             display: flex;
             align-items: center;
             justify-content: center;
             height: 80vh;
-            max-width: 900px;
+            padding: 40px;
         }
-        .profile-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 10px;
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 8px;
             object-fit: cover;
-            border: 3px solid #ffffff;
+            border: 4px solid #ffffff;
         }
-        .vertical-line {
-            width: 2px;
-            height: 150px;
-            background-color: #ffffff;
-            margin: 0 20px;
+        .content {
+            max-width: 600px;
+            margin-left: 40px;
         }
-        .bio {
-            max-width: 500px;
-        }
-        .bio h2 {
+        .content h2 {
+            font-size: 28px;
+            font-weight: 600;
             margin-bottom: 10px;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #d1d1d1;
+        }
+        .divider {
+            height: 150px;
+            width: 2px;
+            background: #ffffff;
+            margin: 0 30px;
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">Srinivasan C</div>
-        <div class="nav-links">
-            <a href="#">About</a>
-            <a href="#">Courses & Internships</a>
-            <a href="#">Contact</a>
-        </div>
-    </div>
-    <div class="container">
-        <img class="profile-img" src="image.png" alt="Profile Image">
-        <div class="vertical-line"></div>
-        <div class="bio">
+    <header class="navbar">
+        <h1>Srinivasan C</h1>
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#courses">Courses & Internships</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="container">
+        <img src="image.png" alt="Srinivasan C" class="profile-image">
+        <div class="divider"></div>
+        <div class="content">
             <h2>About Me</h2>
-            <p>I am a versatile tech enthusiast skilled in Graphic Design, UI Design, Data Analysis, MERN Stack, Java, and Android Development. I enjoy creating innovative solutions across multiple domains, combining design and development for impactful digital experiences.</p>
+            <p>
+                I am a versatile tech enthusiast skilled in Graphic Design, UI Design, Data Analysis, 
+                MERN Stack, Java, and Android Development. I enjoy creating innovative solutions across 
+                multiple domains, combining design and development for impactful digital experiences.
+            </p>
         </div>
-    </div>
+    </section>
 </body>
 </html>
