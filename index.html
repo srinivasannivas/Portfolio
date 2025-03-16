@@ -3,88 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Srinivasan C</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Srinivasan Portfolio</title>
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #121212;
-            color: #ffffff;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #121212;
+            color: #fff;
         }
-        .navbar {
+        header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
-            background: #1e1e1e;
+            padding: 15px 50px;
+            background-color: #1e1e1e;
         }
-        .navbar h1 {
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
             margin: 0;
-            font-size: 24px;
-            font-weight: 600;
+            display: flex;
         }
-        .nav-links a {
-            color: #ffffff;
-            text-decoration: none;
+        nav ul li {
             margin-left: 20px;
-            font-weight: 400;
         }
-        .container {
+        nav ul li a {
+            text-decoration: none;
+            color: #ddd;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            color: #ff9800;
+        }
+        .hero {
             display: flex;
             align-items: center;
             justify-content: center;
             height: 80vh;
-            padding: 40px;
+            text-align: left;
+            padding: 50px;
         }
-        .profile-image {
-            width: 250px;
-            height: 250px;
-            border-radius: 8px;
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
             object-fit: cover;
-            border: 4px solid #ffffff;
+            margin-right: 20px;
+            border: 3px solid #ff9800;
         }
-        .content {
+        .bio {
             max-width: 600px;
-            margin-left: 40px;
         }
-        .content h2 {
+        .bio h2 {
             font-size: 28px;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-        .content p {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #d1d1d1;
-        }
-        .divider {
-            height: 150px;
-            width: 2px;
-            background: #ffffff;
-            margin: 0 30px;
+            color: #ff9800;
         }
     </style>
 </head>
 <body>
-    <header class="navbar">
-        <h1>Srinivasan C</h1>
-        <nav class="nav-links">
-            <a href="#about">About</a>
-            <a href="#courses">Courses & Internships</a>
-            <a href="#contact">Contact</a>
+    <header>
+        <div class="logo">Srinivasan C</div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses & Internships</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <section class="container">
-        <img src="image.png" alt="Srinivasan C" class="profile-image">
-        <div class="divider"></div>
-        <div class="content">
+
+    <section class="hero">
+        <div class="profile">
+            <img src="your-image.jpg" alt="Srinivasan">
+        </div>
+        <div class="bio">
             <h2>About Me</h2>
             <p>
-                I am a versatile tech enthusiast skilled in Graphic Design, UI Design, Data Analysis, 
-                MERN Stack, Java, and Android Development. I enjoy creating innovative solutions across 
-                multiple domains, combining design and development for impactful digital experiences.
+                I am a versatile tech enthusiast skilled in Graphic Design, UI Design, Data Analysis, MERN Stack, Java, and Android Development. 
+                I enjoy creating innovative solutions across multiple domains, combining design and development for impactful digital experiences.
             </p>
         </div>
     </section>
