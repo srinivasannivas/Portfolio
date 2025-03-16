@@ -3,26 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses & Internships</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Courses & Internships - Srinivasan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #1e1e1e;
+        }
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ddd;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            color: #ff9800;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 152, 0, 0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #ff9800;
+        }
+        .resume-btn {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .resume-btn a {
+            background: #ff9800;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .resume-btn a:hover {
+            background: #e68a00;
+        }
+        .section {
+            margin-top: 30px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #ff9800;
+            padding-bottom: 5px;
+            color: #ff9800;
+        }
+        .card {
+            background: #222;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(255, 152, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        .card h3 {
+            margin: 0;
+            color: #ff9800;
+        }
+        .card p {
+            margin-top: 5px;
+            color: #ddd;
+        }
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
+
     <header>
+        <div class="logo">Srinivasan C</div>
         <nav>
             <ul>
-                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="courses.html">Courses & Internships</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="courses">
-        <div class="container">
-            <h2>Courses & Internships</h2>
-            <p>Details about your courses and internships will be displayed here.</p>
-            <a href="resume.pdf" class="btn" download>Download Resume</a>
+    <div class="container">
+        <h1>Courses & Internships</h1>
+
+        <div class="resume-btn">
+            <a href="resume.pdf" download>Download Resume</a>
         </div>
-    </section>
+
+        <div class="section">
+            <h2>Completed Courses</h2>
+            <div class="card">
+                <h3>Full Stack Web Development</h3>
+                <p>Completed an extensive course on MERN stack development, building dynamic web applications.</p>
+            </div>
+            <div class="card">
+                <h3>Data Analysis with Python</h3>
+                <p>Gained hands-on experience in data analysis, visualization, and machine learning using Python.</p>
+            </div>
+            <div class="card">
+                <h3>Android App Development</h3>
+                <p>Developed Android applications using Java and Kotlin, integrating Firebase and REST APIs.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Internships</h2>
+            <div class="card">
+                <h3>Software Developer Intern - ABC Tech</h3>
+                <p>Worked on front-end and back-end development, optimizing user experience for web applications.</p>
+            </div>
+            <div class="card">
+                <h3>Data Science Intern - XYZ Analytics</h3>
+                <p>Performed data cleaning, analysis, and predictive modeling using Python and machine learning techniques.</p>
+            </div>
+            <div class="card">
+                <h3>UI/UX Design Intern - Creative Minds</h3>
+                <p>Designed interactive user interfaces, improving accessibility and usability of mobile applications.</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
