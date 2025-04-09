@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="brand"><span class="highlight">Portfolio</span></div>
+      <div class="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" data-link="home">Home</a></li>
+        <li><a href="#skills" data-link="skills">Skills & Tools</a></li>
+        <li><a href="#projects" data-link="projects">Projects</a></li>
+        <li><a href="#contact" data-link="contact">Contact</a></li>
+        <li><a href="resume.pdf" target="_blank" class="pdf-btn">Resume PDF</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="home" class="home-section section">
+      <div class="container grid">
+        <div class="profile-section">
+            <img src="image.png" alt="Srinivasan Profile Photo" class="profile-img" />
+        </div>
+        <div class="intro">
+            <h2>Hello, I'm <span>Srinivasan C</span></h2>
+            <p>Web developer with a passion for crafting clean, responsive, and user-friendly interfaces.</p>
+        </div>
+    </div>
+</section>
+
+<section class="about-me">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I am a versatile professional with expertise in UI/UX design, graphical design, and data analysis. I focus on creating intuitive user interfaces, crafting visually engaging designs, and utilizing data insights to drive decision-making. With a passion for blending creativity and functionality, I strive to deliver impactful solutions across various projects.
+        </p>
+    </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-heading">Skills & Tools</h2>
+        <h2 class="heading">Skills</h2>
+        <div class="grid-list">
+          <div class="item">UI/UX Design</div>
+          <div class="item">HTML</div>
+          <div class="item">CSS</div>
+          <div class="item">Java</div>
+          <div class="item">MongoDB</div>
+          <div class="item">SQL</div>
+          <div class="item">Firebase</div>
+        </div>
+        <h2 class="heading">Tools</h2>
+        <div class="grid-list tools-list">
+          <div class="item">Figma</div>
+          <div class="item">Adobe XD</div>
+          <div class="item">Photoshop</div>
+          <div class="item">Illustrator</div>
+          <div class="item">Git</div>
+          <div class="item">Android Studio</div>
+          <div class="item">Azure</div>
+          <div class="item">Power BI</div>
+          <div class="item">Excel</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-heading">Projects</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="nova.png" alt="NOVA.AI Preview" />
+            </div>
+            <div class="project-info">
+              <h3>NOVA.AI</h3>
+              <a href="https://srinivasannivas.github.io/NOVA.AI/" target="_blank">
+                https://srinivasannivas.github.io/NOVA.AI/
+              </a>
+              <p class="description">
+                A simple AI voice assistant that interacts through voice commands, greets you, and performs smart actions with a futuristic interface.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-heading">Contact</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Name:</strong> Srinivasan C</p>
+            <p><strong>Email:</strong> <a href="mailto:c.srinivasan8197@gmail.com">c.srinivasan8197@gmail.com</a></p>
+            <p><strong>Mobile:</strong> <a href="tel:+918681084218">+91 8681084218</a></p>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/srinivasan-designer/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100066773574095" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://wa.me/918681084218" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://discord.com/users/nivas9003" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+
+          <div class="message-box">
+            <h3>Send a Message</h3>
+            <form action="https://formsubmit.co/c.srinivasan8197@gmail.com" method="POST" id="contact-form">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email" required />
+              <textarea name="message" placeholder="Your Message" required></textarea>
+              <input type="hidden" name="_next" value="https://srinivasannivas.github.io/Portfolio/contact.html" />
+              <input type="hidden" name="_captcha" value="false" />
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2025 Srinivasan C. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
