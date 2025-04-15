@@ -162,7 +162,7 @@ body {
   }
 
   .profile-img {
-    margin-bottom: 1rem; /* Space between image and content */
+    margin-bottom: 0.5rem; /* Space between image and content */
   }
 
   .intro h2 {
@@ -196,6 +196,7 @@ body {
   line-height: 1.6;
   color: #4f5b72;
 }
+
 /* Skills & Tools */
   .section {
     padding: 4rem 0;
@@ -398,12 +399,14 @@ form button:hover {
   .nav-links {
     position: absolute;
     top: 70px;
-    right: 0;
+    left: 0; /* Change from right: 0 to left: 0 */
     background: #fff;
     flex-direction: column;
     width: 100%;
     display: none;
     padding: 20px 0;
+    align-items: center; /* Center items inside the flex column */
+    text-align: center; /* Center text */
   }
 
   .nav-links.show {
@@ -413,6 +416,7 @@ form button:hover {
   .menu-toggle {
     display: block;
   }
+  
 
   .grid-list {
     justify-content: flex-start;
