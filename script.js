@@ -8,6 +8,24 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks.classList.toggle("show");
   });
 
+  // Close menu when a link is clicked
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("show");
+    });
+  });
+
+  // Optional: Close menu if clicking outside
+  document.addEventListener("click", (e) => {
+    if (
+      navLinks.classList.contains("show") &&
+      !navLinks.contains(e.target) &&
+      !menuToggle.contains(e.target)
+    ) {
+      navLinks.classList.remove("show");
+    }
+  });
+
   // Hide current section link
   const sections = document.querySelectorAll("section[id]");
   const observer = new IntersectionObserver(
