@@ -136,22 +136,31 @@ body {
 
 /* Intro content styling */
 .intro {
-  max-width: 600px; /* Reduced max width */
+  max-width: 600px;
 }
 
 .intro h2 {
-  font-size: 1.5rem; /* Reduced font size */
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-.intro h2 span {
+.intro h2 .name {
   color: #1e88e5;
 }
 
+.intro h2 .be-label {
+  display: inline-block;
+  border-top: 2px solid #000;
+  padding-top: 2px;
+  margin-left: 6px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
 .intro p {
-  font-size: 1rem; /* Reduced font size */
+  font-size: 1rem;
   color: #4f5b72;
-  line-height: 1.6;
+  line-height: 1;
 }
 
 /* Mobile View */
