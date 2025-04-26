@@ -163,6 +163,7 @@ body {
   line-height: 1;
 }
 
+
 /* Mobile View */
 @media (max-width: 768px) {
   .grid {
@@ -277,6 +278,7 @@ body {
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(30, 136, 229, 0.08);
   margin-bottom: 2rem;
+  
 }
 
 .project-image {
@@ -325,8 +327,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: flex-start; /* Align content to the left */
-  text-align: left; /* Ensure all text inside is left-aligned */
+  justify-content: flex-start;
+  text-align: left;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .contact-info, .message-box {
@@ -336,8 +340,8 @@ body {
 .contact-info h3,
 .message-box h3 {
   margin-bottom: 15px;
-  color: #000000;
-  text-align: left; /* Align heading text to the left */
+  color: #000;
+  text-align: left;
 }
 
 .contact-info p, 
@@ -345,12 +349,12 @@ body {
   margin-bottom: 10px;
   color: #333;
   text-decoration: none;
-  text-align: left; /* Ensure paragraph and link text is left-aligned */
+  text-align: left;
 }
 
 .social-links {
   margin-top: 10px;
-  text-align: left; /* Align social icons to the left */
+  text-align: left;
 }
 
 .social-links a {
@@ -385,7 +389,7 @@ form button {
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-bottom: 140px; /* Space below the button to avoid overlap */
+  margin-bottom: 0; /* No extra space to push footer away */
   text-align: left;
 }
 
@@ -401,21 +405,28 @@ form button:hover {
   border-top: 1px solid #ddd;
   color: #777;
   font-size: 0.9rem;
+  margin-top: 30px; /* Small gap after contact */
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {
+  .section {
+    padding-top: 100px; /* Increased padding to account for fixed navbar */
+  }
+  
   .nav-links {
     position: absolute;
     top: 70px;
-    left: 0; /* Change from right: 0 to left: 0 */
+    left: 0;
     background: #fff;
     flex-direction: column;
     width: 100%;
     display: none;
     padding: 20px 0;
-    align-items: center; /* Center items inside the flex column */
-    text-align: center; /* Center text */
+    align-items: center;
+    text-align: center;
+    z-index: 999; /* Ensure nav menu appears over content */
   }
 
   .nav-links.show {
@@ -425,17 +436,7 @@ form button:hover {
   .menu-toggle {
     display: block;
   }
-  
-
-  .grid-list {
-    justify-content: flex-start;
-  }
-
-  .projects-container {
-    padding: 0 10px;
-  }
-
-  .section {
-    padding-top: 80px;
-  }
+  .footer {
+    margin-top: 170px;
+}
 }
